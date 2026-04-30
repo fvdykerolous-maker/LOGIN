@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LOGIN</title>
+  <link rel="stylesheet" href="../css/style-login.css">
+</head>
+<body>
+
+<div class="container">
+    </div>
+    <div class="image-box">
+    <img src="../images/WhatsApp Image 2026-04-26 at 12.05.52 AM.jpeg" alt="Mind Care">
+    </div>
+   <div class="card" id="card">
+
+    <!-- login -->
+    <div class="side front">
+      <div class="content">
+        <div class="logo">
+          <div class="icon">📍</div>
+          <span>Mind Care</span>
+        </div>
+
+        <h2>Welcome back</h2>
+        <p class="subtitle">Sign in to continue your wellness journey</p>
+
+        <input type="email" placeholder="Email address" required>
+        <input type="password" placeholder="Password" minlength="15" required>
+
+        <div class="row">
+          <!-- <label><input type="checkbox"> Remember me</label> -->
+          <a href="">Forgot?</a>
+        </div>
+
+        <button>Sign In</button>
+
+        <p class="switch">
+          Don't have an account?
+          <span onclick="flipCard()">Sign up</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- reg -->
+    <div class="side back">
+      <div class="content">
+        <div class="logo">
+          <div class="icon">📍</div>
+          <span>Mind Care</span>
+        </div>
+
+        <h2>Create account</h2>
+        <p class="subtitle">Start your journey</p>
+
+        <input type="text" placeholder="Username" required>
+        <input type="email" placeholder="Email address" required>
+        <input type="password" placeholder="Password" minlength="15" required>
+
+        <button>Register</button>
+
+        <p class="switch">
+          Already have an account?
+          <span onclick="flipCard()">Login</span>
+        </p>
+      </div>
+    </div>
+
+
+</div>
+
+<script>
+function flipCard() {
+  document.getElementById("card").classList.toggle("flip");
+  }
+</script>
+
+</body>
+</html>

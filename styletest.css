@@ -1,0 +1,244 @@
+*{
+       box-sizing: border-box;/*بيخلي اي بوردير او بادينج او مارجين يتاخد ضمن ال width وميغيرش الكونتينت*/
+}
+body{
+    background-image: linear-gradient(45deg, rgba(88, 97, 255, 0.884), rgb(255, 190, 190) );
+}
+.nav{
+    width: 100%;
+    margin: auto;
+    top: 0;
+    background-color: bisque;
+    position: fixed;
+
+}
+.nav span{
+
+    padding: 0px 10%;
+}
+.good-luck{
+    font-size: 30px;
+    background-image: url(/images/WhatsApp\ Image\ 2026-04-27\ at\ 12.16.32\ AM.jpeg);
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    /* background-size: cover; */
+    padding: 10px 50px ;
+    width: 70%; /*width of div regarding the page*/
+    margin-top: 20px;
+    margin: auto;
+    /* margin-left: 15%; */
+    /* margin-right: 15%; */
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: rgb(240, 206, 164); */
+    border-radius: 50px;
+    border: 10px solid rgb(240, 206, 164); /*short hand*/
+    box-shadow:
+    20px 2px 65px 15px #bda730,
+    -20px 2px 65px 15px #3930bd;
+ 
+}
+.nesting div{
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color:rgba(146, 7, 146, 0.342) ;
+    width: 50%;
+    
+}
+
+.center-span span{
+    padding: 10px;
+    margin: 10px;  /*do not respect (padding / margin)-top or bottom*/
+    background-color:#c3aaaa ;
+
+    
+}
+/*visibility تقدر تخفي المحتوى ولكن حيزه موجود فالصفحه ولما بيظهر بيظهر في مكانه
+display تقدر تخفي المحتوى بس مكانه بيتاخد ولما بتظهره المحتوى كله مكانه بينزل او يتغير بسبب المحتوى الي جه فجاه واخد حيز*/
+.center-span{
+    width: 50%;
+    margin: auto;
+    background: none;
+    text-align: center;
+}
+.act{
+    padding: 3px;
+    background-color: #ffd0d0;
+    width: 90%;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    font-family: "Sekuya", system-ui; /*google font*/
+    font-weight: 400;
+    font-style: normal;
+
+}
+.shadow{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px #f2ff00;
+    text-align: center;
+}
+.rtl{
+    font-size: 25px;
+    direction: rtl;
+    text-align: center;
+
+}
+.ch:checked + label{
+    color: green;
+}
+.woo:checked + label{
+display: none;
+}
+.one span{
+    display: inline-block;
+    background-color: #c3aaaa;
+    font-size: 40px;
+    font-weight: bold;
+}
+.two::first-letter{
+    display: inline-block;
+    background-color: #c3aaaa;
+    font-size: 40px;
+    font-weight: bold;
+}
+::selection {
+    background-color: #ec2222;
+    color: rgb(255, 255, 255);
+}
+.test-before-after{
+    width: 50%;
+    height: 50px;
+    background-color: #EEE;
+    margin:auto ;
+    position: relative;
+}
+
+.test-before-after::after{
+    content: "";
+    position: absolute;
+    background-color: brown;
+    width: 5px;
+    height: 50px;
+
+}
+
+.test-before-after::before{
+    content: "";
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0);
+    width: 0px;
+    height: 0px;
+    border-color: transparent  transparent transparent brown;
+    
+    border-style: solid;
+    border-width: 20px;
+
+}
+.transition{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-property:all ;
+    text-align: center;
+    font-size: 50px;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+
+}
+.transition:hover{
+    margin-left: 100px;
+    width: 400px; 
+}
+.flex{
+    background-color: burlywood;
+    width: 70%;
+    padding: 10px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex div{
+    background-color: brown;
+    color: #ffffff;
+    width: calc(97% / 4);
+    text-align: center;
+    padding: 20px;
+    /* margin: 1px; */
+
+
+}
+.mid{
+    background-color: rgb(244, 106, 133);
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+.in{
+    display: inline-block;
+}
+.frogy{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    width: 700px;
+    height: 700px;
+    background-color: #26247a;
+    margin: auto;
+}
+.frogy div{
+    background-color: #3cd025;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+/* .yellow{
+    align-self: flex-start;
+} */
+.grid-parent{
+    width: 800px;
+    height: 700px;
+    background-color: #c3aaaa;
+    display: grid;
+    margin: auto;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows: repeat(8,1fr) ;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+.g-row{
+    grid-column: 1/7;/* the end not included*/
+    font-size: 50px;
+    font-weight: bold;
+}
+.g-co{
+    grid-row: 2/8;
+}
+.grid-parent div{
+    background-color: #cc5353;
+    padding: 20px;
+    font-weight: 30px;
+    text-align: center;
+
+}
+
